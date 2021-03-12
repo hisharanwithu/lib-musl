@@ -1,0 +1,16 @@
+diff --git a/src/network/h_errno.c b/src/network/h_errno.c
+index 4f700cea..aef6c68a 100644
+--- a/src/network/h_errno.c
++++ b/src/network/h_errno.c
+@@ -1,7 +1,11 @@
+ #include <netdb.h>
+ 
+ #undef h_errno
++#ifdef __Unikraft__
++extern int h_errno;
++#else
+ int h_errno;
++#endif /* ! __Unikraft__ */
+ 
+ int *__h_errno_location(void)
+ {
