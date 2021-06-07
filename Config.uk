@@ -17,7 +17,7 @@ menuconfig LIBMUSL
   select LIBMUSL_STRING
   select LIBMUSL_CTYPE
   select LIBMUSL_STDLIB
-  select LIBMUSL_ENV
+#  select LIBMUSL_ENV
 
 if LIBMUSL
 
@@ -129,7 +129,7 @@ config LIBMUSL_PRNG
 config LIBMUSL_PROCESS
   bool "libprocess"
   default y
-  select LIBMUSL_THREAD
+  #select LIBMUSL_THREAD
 
 config LIBMUSL_REGEX
   bool "libregex"
@@ -193,7 +193,7 @@ config LIBMUSL_FORCE_THREAD
   bool
   default y if LIBUKSCHED
   default n
-  select LIBMUSL_THREAD
+  #select LIBMUSL_THREAD
 
 config LIBMUSL_TIME
   bool "libtime"

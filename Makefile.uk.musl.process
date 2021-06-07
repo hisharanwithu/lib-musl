@@ -11,6 +11,7 @@ LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/include/stdarg.h
 LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/include/stdlib.h
 LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/include/string.h
 LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/src/internal/syscall.h
+LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/src/internal/futex.h
 LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/include/sys/wait.h
 LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/include/unistd.h
 
@@ -22,7 +23,7 @@ LIBMUSL_PROCESS_HDRS-y += $(LIBMUSL)/include/unistd.h
 #LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/execvp.c
 #LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/fexecve.c
 #LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/fork.c
-LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/posix_spawn.c
+#LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/posix_spawn.c
 LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/posix_spawn_file_actions_addclose.c
 LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/posix_spawn_file_actions_adddup2.c
 LIBMUSL_PROCESS_SRCS-y += $(LIBMUSL)/src/process/posix_spawn_file_actions_addopen.c
